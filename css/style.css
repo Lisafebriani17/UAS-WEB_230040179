@@ -1,0 +1,292 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Header and Hero Section */
+.judul {
+    text-align: center;
+    margin-top: 5em;
+    font-size: 3em;
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.9);
+}
+h1 .judul {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+}
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: 700;
+    padding-left: 2em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d47f6a;
+}
+
+.hero-content {
+    position: absolute;
+    z-index: 2;
+}
+
+.hero-content h2 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    color: white;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+  
+.cta-button {
+    padding: 0.8em 1.8em;
+    background: #d47f6a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    background: #b8624e;
+    transform: translateY(-3px);
+}
+
+/* Gallery Section */
+.produk-section {
+    padding: 4em 2em;
+    text-align: center;
+    background: #e7baa4;
+}
+
+.produk-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.produk-item {
+    text-align: center;
+    max-width: 250px;
+    margin-bottom: 1.5em;
+}
+
+.produk-item img {
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produk-item img:hover {
+    transform: scale(1.05);
+}
+
+.produk-item img {
+    width: 250px; /* Tentukan ukuran lebar */
+    height: 250px; /* Tentukan ukuran tinggi */
+    object-fit: cover; /* Agar gambar menyesuaikan tanpa terdistorsi */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.harga {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #d47f6a;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal-checkbox {
+    display: none; /* Sembunyikan checkbox */
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-checkbox:checked + .modal {
+    display: flex; /* Tampilkan modal saat checkbox aktif */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-content h3 {
+    margin-bottom: 1em;
+    color: #333;
+}
+
+.modal-content p {
+    color: #555;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Produk Button */
+.detail-button {
+    margin-top: 10px;
+    padding: 0.5em 1em;
+    background: #d47f6a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.detail-button:hover {
+    background: #b8624e;
+}
+
+/* About Section */
+.about-section {
+    padding: 4em 2em;
+    text-align: center;
+    background: #f6f4f3;
+}
+
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+.contact-section h2 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+.contact-section form button {
+    padding: 1em 2em;
+    background: #d47f6a;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background: #b8624e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 0,5em;
+    background: #333;
+    color: #fff;
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFlorist Bouquet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            
+            background-image: url('img/bg.jpg'); 
+            padding-top: 13em;
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            height: 100vh; 
+            margin: 0; 
+            
+        }
+
+        /* Modal Styles */
+        .modal-checkbox {
+            display: none; /* Sembunyikan checkbox */
+        }
+
+        .modal {
+            display: none; /* Modal default tidak tampil */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .modal-content {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .close-button {
+            display: inline-block;
+            background: red;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .modal-checkbox:checked + .modal {
+            display: flex; /* Tampilkan modal saat checkbox aktif */
+        }
+
+        .detail-button {
+            display: inline-block;
+            background: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+        
+        
+        <header class="hero-section" id="home">
+            </div>
+            <nav>
+                <h1 class="logo">MyFlorist Bouquet</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produk">Produk</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            
+            </nav>
+    
+            
+        <div class="hero-content">
+            <h2>Welcome to MyFlorist</h2>
+            <p>Kami menghadirkan buket bunga yang indah untuk setiap momen spesial Anda.</p>
+            <a href="#produk" class="cta-button">Explore Now</a>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="produk" class="produk-section">
+        <h2>Produk</h2>
+        <div class="produk-container">
+
+            <!-- Produk 1 -->
+           <div class="produk-item">
+            <img src="img/buket 1.jpg" alt="Buket Pink ">
+            <label for="modal1" class="detail-button">Detail Produk</label>
+        </div>
+        <input type="checkbox" id="modal1" class="modal-checkbox">
+        <div class="modal">
+            <div class="modal-content">
+                <h3>Buket PINK</h3>
+                <p>Buket Pink, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                <p>Price : 250.000.</p>
+                <p>Stok : 10pcs.</p>
+                <label for="modal1" class="close-button">Tutup</label>
+            </div>
+        </div>
+
+            <!-- Produk 2 -->
+            <div class="produk-item">
+                <img src="img/buket 2.jpg" alt="Buket Kering">
+                <label for="modal2" class="detail-button">Detail Produk</label>
+            </div>
+            <input type="checkbox" id="modal2" class="modal-checkbox">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Buket Bunga Kering </h3>
+                    <p>Buket Bunga Kering, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                    <p>Price : 150.000.</p>
+                    <p>Stok : 10pcs.</p>
+                    <label for="modal2" class="close-button">Tutup</label>
+                </div>
+            </div>
+
+             <!-- Produk 3 -->
+             <div class="produk-item">
+                <img src="img/buket 3.jpg" alt="Buket Tulip">
+                <label for="modal3" class="detail-button">Detail Produk</label>
+            </div>
+            <input type="checkbox" id="modal3" class="modal-checkbox">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Buket Tulip Biru</h3>
+                    <p>Buket Tulip Biru elegan, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                    <p>Price : 150.000.</p>
+                    <p>Stok : 15pcs.</p>
+                    <label for="modal3" class="close-button">Tutup</label>
+                </div>
+            </div>
+
+             <!-- Produk 4 -->
+             <div class="produk-item">
+                <img src="img/buket 4.jpg" alt="Buket Lily">
+                <label for="modal4" class="detail-button">Detail Produk</label>
+            </div>
+            <input type="checkbox" id="modal4" class="modal-checkbox">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Buket Kuning Gold</h3>
+                    <p>Buket Kuning Gold, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                    <p>Price : 160.000.</p>
+                    <p>Stok : 18pcs.</p>
+                    <label for="modal4" class="close-button">Tutup</label>
+                </div>
+            </div>
+
+             <!-- Produk 5 -->
+           <div class="produk-item">
+            <img src="img/buket 5.jpg" alt="Buket Lily">
+            <label for="modal5" class="detail-button">Detail Produk</label>
+        </div>
+        <input type="checkbox" id="modal5" class="modal-checkbox">
+        <div class="modal">
+            <div class="modal-content">
+                <h3>Buket Biru Muda</h3>
+                <p>Buket Biru Muda, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                <p>Price : 120.000.</p>
+                <p>Stok : 10pcs.</p>
+                <label for="modal5" class="close-button">Tutup</label>
+            </div>
+        </div>
+
+            <!-- Produk 6 -->
+            <div class="produk-item">
+                <img src="img/buket 6.jpg" alt="Buket Lily">
+                <label for="modal6" class="detail-button">Detail Produk</label>
+            </div>
+            <input type="checkbox" id="modal6" class="modal-checkbox">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Buket Mawar Merah </h3>
+                    <p>Buket Mawar Merah , Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                    <p>Price : 145.000.</p>
+                    <p>Stok : 20pcs.</p>
+                    <label for="modal6" class="close-button">Tutup</label>
+                </div>
+            </div>
+
+             <!-- Produk 7 -->
+             <div class="produk-item">
+                <img src="img/buket 7.jpg" alt="Buket Lily">
+                <label for="modal7" class="detail-button">Detail Produk</label>
+            </div>
+            <input type="checkbox" id="modal7" class="modal-checkbox">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Buket Pink Gold</h3>
+                    <p>Buket Pink Gold, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                    <p>Price : 165.000.</p>
+                    <p>Stok : 10pcs.</p>
+                    <label for="modal7" class="close-button">Tutup</label>
+                </div>
+            </div>
+
+             <!-- Produk 8 -->
+             <div class="produk-item">
+                <img src="img/buket 8.jpg" alt="Buket Lily">
+                <label for="modal8" class="detail-button">Detail Produk</label>
+            </div>
+            <input type="checkbox" id="modal8" class="modal-checkbox">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Buket Gold</h3>
+                    <p>Buket Gold, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                    <p>Price : 150.000.</p>
+                    <p>Stok : 10pcs.</p>
+                    <label for="modal8" class="close-button">Tutup</label>
+                </div>
+            </div>
+
+            <!-- Produk 9 -->
+            <div class="produk-item">
+                <img src="img/buket 9.jpg" alt="Buket Lily">
+                <label for="modal9" class="detail-button">Detail Produk</label>
+            </div>
+            <input type="checkbox" id="modal9" class="modal-checkbox">
+            <div class="modal">
+                <div class="modal-content">
+                    <h3>Buket Blue White</h3>
+                    <p>Buket Blue White, Setiap buket dirancang dengan sentuhan artistik, menggabungkan warna, bentuk, dan makna simbolis yang menjadikannya lebih dari sekadar hadiah—buket adalah ekspresi kasih sayang dan perhatian. Temukan koleksi buket terbaik kami untuk memberikan momen istimewa bagi orang tercinta.</p>
+                    <p>Price : 180.000.</p>
+                    <p>Stok : 10pcs.</p>
+                    <label for="modal9" class="close-button">Tutup</label>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>MyFlorist adalah penyedia buket bunga berkualitas tinggi untuk berbagai acara, seperti pernikahan, ulang tahun, dan wisuda. Kami mengutamakan keindahan dan kreativitas dalam setiap produk kami.</p>
+    </section>
+
+    <div id="contact" class="contact-section">
+        <h2>Contact </h2>
+        <form>
+            
+            <ul>
+                <li> Instagram : <a href="https://www.instagram.com/liisafebriani/profilecard/?igsh=MW4xaGo0em81NWVqNg==">liisafebriani_</a></li>
+                <li>WhatsApp: <a href="https://wa.me/qr/3HR7UGRI4QGAP1" target="_blank">+62 859-235-22791</a></li>
+        </ul>                
+            </ul>
+                   </form>
+
+                </div>
+    
+
+    <footer>
+        <p>&copy; 2024 MyFlorist Bouquet. All rights reserved.</p>
+    </footer>
+</body>
+</html>
